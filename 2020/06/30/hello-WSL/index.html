@@ -5,14 +5,19 @@
   
 
   
-  <title>アーカイブ | まぶまぶろぐ</title>
+  <title>Windows10にWSLをインストールしてNode.jsが使えるようになるまで | まぶまぶろぐ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="まぶまぶろぐ">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="※ごめんなさい。まだ書きかけです(m´・ω・｀)m ｺﾞﾒﾝ… WindowのOSでNode.jsを動かせるようですが（試してない）、ここはWSLをインストールしてLinuxでNode.jsを動かせるようにしました。 まずは、WSLのインストールですがインストールそのものはMicrosoft Storeから簡単にできますが、そのまえにWSLが使えるようにしないといけません。PowerShellを管">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows10にWSLをインストールしてNode.jsが使えるようになるまで">
+<meta property="og:url" content="http://yoursite.com/2020/06/30/hello-WSL/index.html">
 <meta property="og:site_name" content="まぶまぶろぐ">
+<meta property="og:description" content="※ごめんなさい。まだ書きかけです(m´・ω・｀)m ｺﾞﾒﾝ… WindowのOSでNode.jsを動かせるようですが（試してない）、ここはWSLをインストールしてLinuxでNode.jsを動かせるようにしました。 まずは、WSLのインストールですがインストールそのものはMicrosoft Storeから簡単にできますが、そのまえにWSLが使えるようにしないといけません。PowerShellを管">
 <meta property="og:locale" content="ja_JP">
+<meta property="article:published_time" content="2020-06-29T15:00:00.000Z">
+<meta property="article:modified_time" content="2020-06-29T17:33:52.160Z">
 <meta property="article:author" content="mabmab">
+<meta property="article:tag" content="Windows10 WSL Node.js">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="まぶまぶろぐ" type="application/atom+xml">
@@ -62,59 +67,61 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/30/hello-WSL/" class="archive-article-date">
-  <time datetime="2020-06-29T15:00:00.000Z" itemprop="datePublished">6月 30</time>
+        <section id="main"><article id="post-hello-WSL" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/06/30/hello-WSL/" class="article-date">
+  <time datetime="2020-06-29T15:00:00.000Z" itemprop="datePublished">2020-06-30</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/30/hello-WSL/">Windows10にWSLをインストールしてNode.jsが使えるようになるまで</a>
+    <h1 class="article-title" itemprop="name">
+      Windows10にWSLをインストールしてNode.jsが使えるようになるまで
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/06/28/hello-Node.js/" class="archive-article-date">
-  <time datetime="2020-06-27T15:00:00.000Z" itemprop="datePublished">6月 28</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/28/hello-Node.js/">Node.jsはじめました</a>
-    </h1>
-  
+        <p>※ごめんなさい。まだ書きかけです(m´・ω・｀)m ｺﾞﾒﾝ…</p>
+<p>WindowのOSでNode.jsを動かせるようですが（試してない）、ここはWSLをインストールしてLinuxでNode.jsを動かせるようにしました。</p>
+<p>まずは、WSLのインストールですがインストールそのものはMicrosoft Storeから簡単にできますが、そのまえにWSLが使えるようにしないといけません。<br>PowerShellを管理者権限で起動して、実行します。<br>Microsoft StoreからWSLを探してUbuntu20.04LTをインストール。<br>Windowsを再起動（忘れがち）</p>
+<p>Node.jsをWSLにインストール<br>できない？？？</p>
+<p>sudo apt update<br>sudo apt upgrade<br>（最初は時間がかかります）</p>
+<p>sudo apt install npm</p>
+<p>終了後にインストールされたNode.jsとnpmのバージョンを確認<br>npm -v<br>node -v</p>
+<p>お疲れ様でした。</p>
 
-    </header>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/06/30/hello-WSL/" data-id="ckc0s9q8p0001819zgzdo7rus" class="article-share-link">共有</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Windows10-WSL-Node-js/" rel="tag">Windows10 WSL Node.js</a></li></ul>
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2020/06/28/hello-Node.js/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">前の記事</strong>
+      <div class="article-nav-title">Node.jsはじめました</div>
+    </a>
   
+</nav>
 
+  
+</article>
 
 </section>
         
